@@ -1,8 +1,12 @@
 WebEng::Application.routes.draw do
+  devise_for :users
+
   resources :statuses
 
 
   resources :trips
+
+  root :to => "trips#index"
 
 
   # The priority is based upon order of creation:
