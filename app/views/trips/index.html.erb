@@ -6,7 +6,11 @@
 
 <% @trips.each do |trip| %>
 <div class="trip">
-  <strong><%= trip.name %> </strong>
+  <strong>Trip creator name</strong>
+  <strong><%= trip.user.first_name %></strong>
+  <br/>
+  <strong>Trip name</strong>
+  <strong><%= trip.name %></strong>
   <p><%= trip.content %></p>
   <div class="meta">
     <%= link_to time_ago_in_words(trip.created_at) + " ago", trip %>

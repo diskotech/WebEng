@@ -1,7 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Name:</b>
+	<b>Trip Creator Name: </b>
+	<%= @trip.user.first_name %>
+</p>
+
+<p>
+  <b>Trip Name:</b>
   <%= @trip.name %>
 </p>
 
